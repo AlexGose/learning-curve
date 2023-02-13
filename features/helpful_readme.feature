@@ -26,3 +26,11 @@ Scenario: The user reads brief background information on learning curves
     And the learning curve based on number of training examples is mentioned
     And this is described as the focus of this project
     And the possible computational cost and benefits are mentioned
+
+Scenario: The user reads a brief description of the benefits of learning curves
+    When the user opens or views the README file and scrolls down
+    Then there is a section titled "Benefits of Learning Curves"
+    And the specific type of learning curve is mentioned
+    And their utility in diagnosing models is mentioned
+    And examples from Andrew Ng's course is mentioned
+    And the utility of learning curves for collecting data is mentioned

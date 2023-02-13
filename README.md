@@ -10,6 +10,10 @@ Brief background information on resources and related software will also appear 
 
 This project is new.  Rapid and dramatic changes are likely.  The repository may even be deleted at some point.  Use at your own risk.
 
+## Benefits of Learning Curves
+
+Learning curves based on the number of training examples, along with a desired level of performance, are useful for diagnosing problems with a model, such as high bias or high variance.  Andrew Ng provides some examples of these plots in his "Machine Learning" course taught in CS229 at Stanford (see [lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13)).  Learning curves are also used to assess whether or not to collect more training data (see Mohr and van Rijn).
+
 ## Background on Learning Curves
 
 The term ["learning curve"](https://en.wikipedia.org/wiki/Learning_curve_(machine_learning)) used here is specifically for supervised machine learning.  The term has a longer history of use outside of machine learning (see Viering and Loog) .  In the field of machine learning the term was originally used for reinforcement learning (See Mohr and van Rijn).
@@ -23,5 +27,6 @@ Another type of learning curve, and the focus of this project, also plots some m
 ## References
 
 - Mohr, Felix, and Jan N van Rijn. “Learning Curves for Decision Making in Supervised Machine Learning–A Survey.” ArXiv Preprint ArXiv:2201.12150, 2022. <https://arxiv.org/pdf/2201.12150.pdf>.
+- Ng, Andrew. Lecture 13 "Debugging ML Models and Error Analysis", Stanford CS229 Machine Learning (Autumn 2018) lecture video (<https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13> at 16:00)
 - Viering, Tom, and Marco Loog. “The Shape of Learning Curves: A Review.” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022. <https://arxiv.org/pdf/2103.10948.pdf>.
 
