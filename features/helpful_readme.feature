@@ -34,3 +34,12 @@ Scenario: The user reads a brief description of the benefits of learning curves
     And their utility in diagnosing models is mentioned
     And examples from Andrew Ng's course is mentioned
     And the utility of learning curves for collecting data is mentioned
+
+Scenario: The user sees a list of Python packages for generating learning curves
+    When the user opens or views the README file and scrolls down
+    Then there is a section titled "Software"
+    And a bulleted list with links is shown
+    And all projects are related to learning curves for supervised machine learning
+    And not all projects work directly with Pytorch
+    And not all projects plot learning curves based on training set sizes
+    And there is a request to open an issue to add to the list
