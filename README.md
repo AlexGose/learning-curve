@@ -6,9 +6,7 @@ This is a repository for plotting [learning curves](#background-on-learning-curv
 
 A Jupyter notebook demonstrating how to plot a learning curve for an example [Pytorch](https://github.com/pytorch/pytorch) model is coming soon.  The learning curve is one where the x-axis represents training set size, not the more common number of training loop iterations.  Please open an [issue](https://github.com/AlexGose/learning-curve/issues) if you know of any such publicly available examples, and I will list them here.
 
-Additional information on related software will also appear here soon.  The repository will be updated frequently; so, please check back soon.
-
-This project is new.  Rapid and dramatic changes are likely.  The repository may even be deleted at some point.  Use at your own risk.
+This project is new.  Rapid and dramatic changes are likely.  Please check back soon for updates.
 
 ## Benefits of Learning Curves
 
@@ -16,15 +14,21 @@ Learning curves based on the number of training examples, along with a desired l
 
 ## Software
 
-Here are some noteworthy Python packages (in alphabetical order):
+These noteworthy Python packages are related to plotting learning curves for supervised machine learning.  Some are not designed to work with Pytorch directly, and some do not produce learning curves for increasing numbers of training set sizes. Please open an [issue](https://github.com/AlexGose/learning-curve/issues) to suggest a package to add to the list.
 
-- [Pierogi](https://github.com/nalepae/pierogi)
-- [scikit-learn](https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve)
-- [skorch](https://github.com/skorch-dev/skorch)
-- [TensorBoard](https://www.tensorflow.org/tensorboard/) ([torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html))
-- [Yellowbrick](https://www.scikit-yb.org/en/latest/api/model_selection/learning_curve.html)
+| Software | Actively Maintained | sklearn models | Pytorch models | Real-time | Browser | iteration LC | train set size LC |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| [Pierogi](https://github.com/nalepae/pierogi) |  X  | X   |  ✓    |  ✓   |  ✓   |   ✓  |  X  |
+| [scikit-learn](https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve) | ✓  | ✓  | X | X | X | ✓  | ✓  |
+| [skorch](https://github.com/skorch-dev/skorch) | ✓  | X | ✓  | X | X | X | X |
+| [TensorBoard](https://www.tensorflow.org/tensorboard/) ([torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)) | ✓  | X | ✓  | ✓  | ✓  | ✓  | X |
+| [Yellowbrick](https://www.scikit-yb.org/en/latest/api/model_selection/learning_curve.html) | ✓  | ✓  | X | X | X | ✓  | ✓  |
 
-These are all packages related to plotting learning curves for supervised machine learning.  Some are not designed to work with Pytorch directly, and some do not produce learning curves for increasing numbers of training set sizes. Please open an [issue](https://github.com/AlexGose/learning-curve/issues) to suggest a package to add to the list.
+- LC = Learning Curve
+- ✓  = Indicates "yes", "supported", or within the intended scope of the project
+- X = Indicates "no", "not supported", or not within the intended scope of the project
+
+Note: These software packages have different goals and purposes, and this table is only meant to give a quick impression.  One is not better than the other based on number of check marks or some other arbitrary measure.  For example, skorch does not support plotting learning curves since it is designed to facilitate the use of sklearn, where such tasks are supported, for Pytorch models.
 
 ## Background on Learning Curves
 
