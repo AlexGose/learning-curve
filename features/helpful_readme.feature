@@ -50,3 +50,10 @@ Scenario: The user sees a table comparing software
     And the table includes a column for Pytorch models
     And the table includes a column for learning curves based on training set size
     And other columns appear to highlight the differences between the packages
+
+Scenario: The user reads acknowledgements, author list, and license
+    When the user scrolls down the README file
+    Then there are sections "Acknowledgements", "Author", and "License"
+    And all the projects mentioned in the README are acknowledged
+    And the author is mentioned in the Author section
+    And the license is mentioned in the License section

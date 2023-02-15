@@ -45,3 +45,15 @@ Another type of learning curve, and the focus of this project, also plots some m
 - Mohr, Felix, and Jan N van Rijn. “Learning Curves for Decision Making in Supervised Machine Learning–A Survey.” ArXiv Preprint ArXiv:2201.12150, 2022. <https://arxiv.org/pdf/2201.12150.pdf>.
 - Ng, Andrew. Lecture 13 "Debugging ML Models and Error Analysis", Stanford CS229 Machine Learning (Autumn 2018) lecture video (<https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13> at 16:00)
 - Viering, Tom, and Marco Loog. “The Shape of Learning Curves: A Review.” IEEE Transactions on Pattern Analysis and Machine Intelligence, 2022. <https://arxiv.org/pdf/2103.10948.pdf>.
+
+## Acknowledgments
+
+Thank you to the people who contributed to the projects mentioned here.
+
+## Author
+
+Alexander H Gose
+
+## License
+
+[MIT License](LICENSE)
