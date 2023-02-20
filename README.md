@@ -4,9 +4,11 @@
 
 This is a repository for plotting [learning curves](#background-on-learning-curves) in Python.
 
-A Jupyter notebook demonstrating how to plot a learning curve for an example [Pytorch](https://github.com/pytorch/pytorch) model is coming soon.  The learning curve is one where the x-axis represents training set size, not the more common number of training loop iterations.  Please open an [issue](https://github.com/AlexGose/learning-curve/issues) if you know of any such publicly available examples, and I will list them here.
+The Jupyter notebook [notebook/linear_regression.ipynb](notebook/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression [Pytorch](https://github.com/pytorch/pytorch) model.
 
-This project is new.  Rapid and dramatic changes are likely.  Please check back soon for updates.
+![simple linear regression](images/SimpleLinearRegression.png)
+
+The learning curve is one where the x-axis represents training set size, not the more common number of training loop iterations.  Please open an [issue](https://github.com/AlexGose/learning-curve/issues) if you know of any such publicly available examples for Pytorch models, and I will list them here.
 
 ## Benefits of Learning Curves
 

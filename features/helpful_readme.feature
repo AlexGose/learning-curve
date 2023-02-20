@@ -4,15 +4,13 @@ Feature: A helpful README file
 Scenario: The user reads a brief description of the utility of the repository
     When the user opens or views the README file
     Then there is a section titled "Introduction" at the top
-    And the user is told the risk of using the repository
     And a link to the background on learning curves section is provided
-    And the user is told a Jupyter notebook is coming soon
-    And the notebook will have example Python code for plotting a learning curve
-    And the example will be for a Pytorch model
+    And there is a link to a Jupyter notebook
+    And the notebook has example Python code for plotting a learning curve
+    And the example is for a Pytorch model
     And the example will plot training set size on the x-axis
     And a link for Pytorch is provided
     And there is a request for links to other such examples
-    And the user is told to check back soon
 
 Scenario: The user reads brief background information on learning curves
     When the user opens or views the README file and scrolls down
