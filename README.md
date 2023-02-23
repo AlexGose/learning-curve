@@ -2,13 +2,20 @@
 
 ## Introduction
 
-This is a repository for plotting [learning curves](#background-on-learning-curves) in Python.
+This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for Pytorch supervised machine learning models.  A number of model and plotting variations are demonstrated in Jupyter notebooks.
 
-The Jupyter notebook [notebook/linear_regression.ipynb](notebook/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression [Pytorch](https://github.com/pytorch/pytorch) model.
+For example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression [Pytorch](https://github.com/pytorch/pytorch) model.
 
 ![simple linear regression](images/SimpleLinearRegression.png)
 
 The learning curve is one where the x-axis represents training set size, not the more common number of training loop iterations.  Please open an [issue](https://github.com/AlexGose/learning-curve/issues) if you know of any such publicly available examples for Pytorch models, and I will list them here.
+
+## Features
+
+The example notebooks produce learning curve plots with the following features:
+
+1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) shows how to control the cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
+2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) shows how to use a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
 
 ## Benefits of Learning Curves
 

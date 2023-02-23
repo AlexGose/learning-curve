@@ -8,7 +8,7 @@ Scenario: The user views an example learning curve
     And a link to the Jupyter notebook for generating the plot is given
 
 Scenario: The user views the code for a simple linear regression Pytorch model
-    When the user opens or views the "notebook/linear_regression.ipynb" file
+    When the user opens or views the "notebooks/linear_regression.ipynb" file
     Then there is a brief description of the notebook's contents
     And there are cells for building a simple linear regression Pytorch model
     And the model is trained used stochastic gradient descent
