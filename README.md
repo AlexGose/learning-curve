@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for Pytorch supervised machine learning models.  A number of model and plotting variations are demonstrated in Jupyter notebooks.
+This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for [Pytorch](https://github.com/pytorch/pytorch) supervised machine learning models.  A number of model and plotting variations are demonstrated in [Jupyter](https://jupyter.org/) notebooks.
 
-For example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression [Pytorch](https://github.com/pytorch/pytorch) model.
+For example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression Pytorch model.
 
 ![simple linear regression](images/SimpleLinearRegression.png)
 
@@ -16,7 +16,7 @@ The example notebooks produce learning curve plots with the following features:
 
 1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) shows how to control the cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
 2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) shows how to use a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
-3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) shows how to use GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set
+3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) shows how to use GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
 
 ## Benefits of Learning Curves
 
