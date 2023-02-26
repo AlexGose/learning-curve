@@ -17,6 +17,7 @@ The example notebooks produce learning curve plots with the following features:
 1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) shows how to control the cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
 2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) shows how to use a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
 3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) shows how to use GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
+4. [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) shows an example learning curve for a high variance Pytorch model.  An example of a high bias Pytorch model is coming soon
 
 ## Benefits of Learning Curves
 
