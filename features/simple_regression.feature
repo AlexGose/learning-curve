@@ -4,7 +4,7 @@ Scenario: The user views an example learning curve
     When the user opens or views the README.md file
     And scrolls down
     Then there is an example plot of a learning curve
-    And the learning curve is for a Pytorch model
+    And the learning curve is for a linear regression Pytorch model
     And a link to the Jupyter notebook for generating the plot is given
 
 Scenario: The user views the code for a simple linear regression Pytorch model
