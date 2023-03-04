@@ -6,6 +6,7 @@ Scenario: The user reads a brief description of the utility of the repository
     Then there is a section titled "Introduction" at the top
     And a link to the background on learning curves section is provided
     And there are notebooks for plotting learning curves for Pytorch models
+    And the examples make heavy use of skorch and scikit-learn
     And there is a link to an example Jupyter notebook
     And the example will plot training set size on the x-axis
     And a link for Pytorch is provided

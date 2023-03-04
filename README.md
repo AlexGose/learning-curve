@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for [Pytorch](https://github.com/pytorch/pytorch) supervised machine learning models.  A number of model and plotting variations are demonstrated in [Jupyter](https://jupyter.org/) notebooks.
+This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for [Pytorch](https://github.com/pytorch/pytorch) supervised machine learning models.  A number of model and plotting variations are demonstrated in [Jupyter](https://jupyter.org/) notebooks.  These make heavy use of [skorch](https://github.com/skorch-dev/skorch) and [scikit-learn](https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve).
 
-For example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression Pytorch model.
+As an example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression Pytorch model.
 
 ![simple linear regression](images/SimpleLinearRegression.png)
 
