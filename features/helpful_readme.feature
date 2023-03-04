@@ -16,7 +16,7 @@ Scenario: The user reads a brief comparison of the Jupyter notebooks
     When the user opens or views the README file
     Then there is a section titled "Features"
     And Each notebook in the repository is listed with a link
-    And next to each notebook is a description of its features
+    And next to each notebook is a description of features and model variations
 
 Scenario: The user reads brief background information on learning curves
     When the user opens or views the README file and scrolls down

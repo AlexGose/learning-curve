@@ -12,12 +12,12 @@ The learning curve is one where the x-axis represents training set size, not the
 
 ## Features
 
-The example notebooks produce learning curve plots with the following features:
+The example notebooks are listed below.  Each produces learning curve plots with the following features and model variations:
 
-1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) shows how to control the cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
-2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) shows how to use a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
-3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) shows how to use GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
-4. [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) shows an example learning curves for high variance and high bias Pytorch models
+1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) controls the learning curve cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
+2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) plots a learning curve using a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
+3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) plots a learning curve using GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used after the plot for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
+4. [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) plots example learning curves for high variance and high bias Pytorch models
 
 ## Benefits of Learning Curves
 
