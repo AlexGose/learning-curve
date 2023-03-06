@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for [Pytorch](https://github.com/pytorch/pytorch) supervised machine learning models.  A number of model and plotting variations are demonstrated in [Jupyter](https://jupyter.org/) notebooks.
+This is a repository of example Python code for plotting [learning curves](#background-on-learning-curves) for [Pytorch](https://github.com/pytorch/pytorch) supervised machine learning models.  A number of model and plotting variations are demonstrated in [Jupyter](https://jupyter.org/) notebooks.  These make heavy use of [skorch](https://github.com/skorch-dev/skorch) and [scikit-learn](https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve).
 
-For example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression Pytorch model.
+As an example, the Jupyter notebook [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) demonstrates how to plot the learning curve below for a simple linear regression Pytorch model.
 
 ![simple linear regression](images/SimpleLinearRegression.png)
 
@@ -12,16 +12,26 @@ The learning curve is one where the x-axis represents training set size, not the
 
 ## Features
 
-The example notebooks produce learning curve plots with the following features:
+The example notebooks are listed below.  Each produces learning curve plots with the following features and model variations:
 
-1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) shows how to control the cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
-2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) shows how to use a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
-3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) shows how to use GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
-4. [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) shows an example learning curves for high variance and high bias Pytorch models
+1. [notebooks/linear_regression.ipynb](notebooks/linear_regression.ipynb) controls the learning curve cross validation splitting strategy and scoring metric for a simple linear regression Pytorch model
+2. [notebooks/pipeline.ipynb](notebooks/pipeline.ipynb) plots a learning curve using a scikit-learn Pipeline object for scaling input data for a neural network Pytorch classification model
+3. [notebooks/gpu_minibatch.ipynb](notebooks/gpu_minibatch.ipynb) plots a learning curve using GPU processing and mini-batch gradient descent with a Pytorch model and the [MNIST](http://yann.lecun.com/exdb/mnist/) data set.  Here, the skorch object is re-used after the plot for test and training accuracy calculations as well as a confusion matrix plot with scikit-learn
+4. [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) plots example learning curves for high variance and high bias Pytorch models
 
 ## Benefits of Learning Curves
 
-Learning curves based on the number of training examples, along with a desired level of performance, are useful for diagnosing problems with a model, such as high bias or high variance.  Andrew Ng provides some examples of these plots in his "Machine Learning" course taught in CS229 at Stanford (see [lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13)).  Learning curves are also used to assess whether or not to collect more training data (see Mohr and van Rijn).
+Learning curves based on the number of training examples, along with a desired level of performance, are useful for diagnosing problems with a model, such as high bias or high variance.  Andrew Ng provides some stylized examples of these plots in his "Machine Learning" course taught in CS229 at Stanford (see [lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13)).
+
+In the [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) file, the following learning curve is plotted for a Pytorch model with high variance, relative to a desired 95% accuracy:
+
+![example of variance](images/variance.png)
+
+In the same notebook, the following learning curve is plotted for a different Pytorch model and data set with high bias, relative to a desired 85% accuracy:
+
+![example of bias](images/bias.png)
+
+Learning curves are also used to assess whether or not to collect more training data (see Mohr and van Rijn).
 
 ## Software
 

@@ -6,6 +6,7 @@ Scenario: The user reads a brief description of the utility of the repository
     Then there is a section titled "Introduction" at the top
     And a link to the background on learning curves section is provided
     And there are notebooks for plotting learning curves for Pytorch models
+    And the examples make heavy use of skorch and scikit-learn
     And there is a link to an example Jupyter notebook
     And the example will plot training set size on the x-axis
     And a link for Pytorch is provided
@@ -15,7 +16,7 @@ Scenario: The user reads a brief comparison of the Jupyter notebooks
     When the user opens or views the README file
     Then there is a section titled "Features"
     And Each notebook in the repository is listed with a link
-    And next to each notebook is a description of its features
+    And next to each notebook is a description of features and model variations
 
 Scenario: The user reads brief background information on learning curves
     When the user opens or views the README file and scrolls down
@@ -34,7 +35,8 @@ Scenario: The user reads a brief description of the benefits of learning curves
     Then there is a section titled "Benefits of Learning Curves"
     And the specific type of learning curve is mentioned
     And their utility in diagnosing models is mentioned
-    And examples from Andrew Ng's course is mentioned
+    And examples from Andrew Ng's course are mentioned
+    And examples from the "botebooks/vairance_bias.ipynb" notebook are shown
     And the utility of learning curves for collecting data is mentioned
 
 Scenario: The user sees a list of Python packages for generating learning curves
