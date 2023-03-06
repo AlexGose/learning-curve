@@ -35,7 +35,8 @@ Scenario: The user reads a brief description of the benefits of learning curves
     Then there is a section titled "Benefits of Learning Curves"
     And the specific type of learning curve is mentioned
     And their utility in diagnosing models is mentioned
-    And examples from Andrew Ng's course is mentioned
+    And examples from Andrew Ng's course are mentioned
+    And examples from the "botebooks/vairance_bias.ipynb" notebook are shown
     And the utility of learning curves for collecting data is mentioned
 
 Scenario: The user sees a list of Python packages for generating learning curves

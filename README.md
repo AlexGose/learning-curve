@@ -21,7 +21,17 @@ The example notebooks are listed below.  Each produces learning curve plots with
 
 ## Benefits of Learning Curves
 
-Learning curves based on the number of training examples, along with a desired level of performance, are useful for diagnosing problems with a model, such as high bias or high variance.  Andrew Ng provides some examples of these plots in his "Machine Learning" course taught in CS229 at Stanford (see [lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13)).  Learning curves are also used to assess whether or not to collect more training data (see Mohr and van Rijn).
+Learning curves based on the number of training examples, along with a desired level of performance, are useful for diagnosing problems with a model, such as high bias or high variance.  Andrew Ng provides some stylized examples of these plots in his "Machine Learning" course taught in CS229 at Stanford (see [lecture 13](https://www.youtube.com/watch?v=ORrStCArmP4&list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU&index=13)).
+
+In the [notebooks/variance_bias.ipynb](notebooks/variance_bias.ipynb) file, the following learning curve is plotted for a Pytorch model with high variance, relative to a desired 95% accuracy:
+
+![example of variance](images/variance.png)
+
+In the same notebook, the following learning curve is plotted for a different Pytorch model and data set with high bias, relative to a desired 85% accuracy:
+
+![example of bias](images/bias.png)
+
+Learning curves are also used to assess whether or not to collect more training data (see Mohr and van Rijn).
 
 ## Software
 
